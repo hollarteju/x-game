@@ -191,6 +191,15 @@ h3{
 @media(max-width:425px){
     .container{
         width: 90%;
+        margin-top: 5rem;
+    }
+
+    .levels{
+        margin-bottom: 2rem;
+    }
+
+    .h2{
+        margin-top: 2rem;
     }
     
 }
