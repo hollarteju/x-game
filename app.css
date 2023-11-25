@@ -1,0 +1,204 @@
+*,
+::after,
+::before{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(18, 18, 48);
+}
+
+.container{
+    margin: auto;
+    margin-top: 4rem;
+    width: 50%;
+    height: 80vh;
+    position: relative;
+    box-shadow: 1px 1px 5px -1px;
+    background-color: rgb(25, 25, 66);
+    align-items: center;
+    text-align: center;
+    padding-block: 1rem;
+    align-items: center;
+
+}
+
+#layer{
+    display: none;
+}
+
+h1{
+    color: white;
+}
+
+.levels{
+    margin-bottom: 1rem;
+}
+
+.levels input{
+    width: 10rem;
+    padding: 1rem;
+    outline: none;
+    background-color:rgb(25, 25, 66) ;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.levels i{
+    background-color: yellow;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.cells{
+    background-color: skyblue;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.cells input{
+    height: 5rem;
+    width: 5rem;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-block: 2px;
+    outline: none;
+    border: none;
+    background-color: rgb(25, 25, 66);
+}
+
+#first-row input{
+    margin-top:0 ;
+}
+
+#last-row input{
+    margin-bottom:0 ;
+}
+
+.cells input:hover{
+    box-shadow: 0 0 4px 1px rgb(4, 112, 155);
+    
+}
+
+h2{
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+    background-color: yellow;
+    width: fit-content;
+    margin-inline: auto;
+    cursor: pointer;
+}
+
+p{
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+    background-color: yellow;
+    width: fit-content;
+    margin-inline: auto;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+p:hover{
+    background-color: yellowgreen;
+}
+
+#play{
+    margin-top: 8em;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.active{
+    display: block;
+}
+
+h3{
+    position: absolute;
+    padding: 10rem;
+    background-color: yellow;
+    font: 600;
+    top: 25%;
+    right: 15%;
+    display: none;
+}
+
+#play button{
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
+    background-color: yellow;
+    width: fit-content;
+    margin-inline: auto;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#play button:hover{
+    background-color: yellowgreen
+}
+
+@media(max-width:816px){
+    h3{
+        position: absolute;
+        padding: 8rem 0;
+        background-color: yellow;
+        font: 600;
+        top: 28%;
+        right: 0;
+        display: none;
+        width: 100%;
+    }
+    
+    }
+@media(max-width:768px){
+    .container{
+        margin-top: 2rem;
+        width: 50%;
+        height: 90vh;
+      
+    
+    }
+
+    .cells input{
+        height: 4.5rem;
+        width: 4.5rem;
+        cursor: pointer;
+    }
+    
+    
+    h3{
+        position: absolute;
+        padding: 8rem 0;
+        background-color: yellow;
+        font: 600;
+        top: 28%;
+        right: 0;
+        display: none;
+        width: 100%;
+    }}
+
+
+@media(max-width:425px){
+    .container{
+        width: 70%;
+    }
+    
+}
+
+
+@media(max-width:320px){
+    .container{
+        width: 80%;
+    }
+    
+}
