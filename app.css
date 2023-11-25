@@ -181,7 +181,7 @@ h3{
         padding: 8rem 0;
         background-color: yellow;
         font: 600;
-        top: 28%;
+        top: 20%;
         right: 0;
         display: none;
         width: 100%;
@@ -191,7 +191,7 @@ h3{
 @media(max-width:425px){
     .container{
         width: 90%;
-        margin-top: 5rem;
+        padding-top: 3rem;
     }
 
     .levels{
