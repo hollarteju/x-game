@@ -67,6 +67,7 @@ cells_input.forEach((cell, index)=> cell.addEventListener("click", ()=>{
     if(player_1){
         cell.value = "O";
         cell.disabled = "true";
+        cell.style.color = "white"
         player_1= false
      
         ++num_of_play
@@ -81,6 +82,7 @@ cells_input.forEach((cell, index)=> cell.addEventListener("click", ()=>{
     if(player_2){
         cell.value = "X";
         cell.disabled = "true";
+        cell.style.color = "red"
     }
 
     if(cells_input[0].value === "O" && cells_input[1].value === "O" && cells_input[2].value === "O"
@@ -91,6 +93,55 @@ cells_input.forEach((cell, index)=> cell.addEventListener("click", ()=>{
     || cells_input[2].value === "O" && cells_input[5].value === "O" && cells_input[8].value === "O"
     || cells_input[0].value === "O" && cells_input[4].value === "O" && cells_input[8].value === "O"
     || cells_input[2].value === "O" && cells_input[4].value === "O" && cells_input[6].value === "O" ) {
+        
+       if(cells_input[0].value === "O" && cells_input[1].value === "O" && cells_input[2].value === "O"){
+            cells_input[0].style.backgroundColor = "green"
+            cells_input[1].style.backgroundColor = "green"
+            cells_input[2].style.backgroundColor = "green"
+        }
+        if(cells_input[3].value === "O" && cells_input[4].value === "O" && cells_input[5].value === "O"){
+            cells_input[3].style.backgroundColor = "green"
+            cells_input[4].style.backgroundColor = "green"
+            cells_input[5].style.backgroundColor = "green"
+        }
+        if(cells_input[6].value === "O" && cells_input[7].value === "O" && cells_input[8].value === "O"){
+            cells_input[6].style.backgroundColor = "green"
+            cells_input[7].style.backgroundColor = "green"
+            cells_input[8].style.backgroundColor = "green"
+        }
+        if(cells_input[3].value === "O" && cells_input[6].value === "O" && cells_input[0].value === "O"){
+            cells_input[6].style.backgroundColor = "green"
+            cells_input[3].style.backgroundColor = "green"
+            cells_input[0].style.backgroundColor = "green"
+        }
+        if(cells_input[1].value === "O" && cells_input[4].value === "O" && cells_input[7].value === "O"){
+            cells_input[1].style.backgroundColor = "green"
+            cells_input[4].style.backgroundColor = "green"
+            cells_input[7].style.backgroundColor = "green"
+        }
+        if(cells_input[2].value === "O" && cells_input[5].value === "O" && cells_input[8].value === "O"){
+            cells_input[2].style.backgroundColor = "green"
+            cells_input[5].style.backgroundColor = "green"
+            cells_input[8].style.backgroundColor = "green"
+        }
+        if(cells_input[0].value === "O" && cells_input[4].value === "O" && cells_input[8].value === "O"){
+            cells_input[0].style.backgroundColor = "green"
+            cells_input[4].style.backgroundColor = "green"
+            cells_input[8].style.backgroundColor = "green"
+        }
+        if(cells_input[2].value === "O" && cells_input[4].value === "O" && cells_input[6].value === "O"){
+            cells_input[2].style.backgroundColor = "green"
+            cells_input[4].style.backgroundColor = "green"
+            cells_input[6].style.backgroundColor = "green"
+        }
+
+        setTimeout(()=>{
+            for(let i = 0; i < 9; i++){
+                cells_input[i].style.backgroundColor = " rgb(25, 25, 66)"
+            }
+           
+        },2000)
+        
        computer = false
        player_1 = true
        num_of_play = 0
@@ -167,6 +218,7 @@ if(computer){
     list_of_cells = list_of_cells.filter(e => e !== computer_value)
     player_1 = true
     ++num_of_play
+    cells_input[computer_value].style.color = "yellow"
 }
 
 if(cells_input[0].value === "X" && cells_input[1].value === "X" && cells_input[2].value === "X"
@@ -177,6 +229,56 @@ if(cells_input[0].value === "X" && cells_input[1].value === "X" && cells_input[2
  || cells_input[2].value === "X" && cells_input[5].value === "X" && cells_input[8].value === "X"
  || cells_input[0].value === "X" && cells_input[4].value === "X" && cells_input[8].value === "X"
  || cells_input[2].value === "X" && cells_input[4].value === "X" && cells_input[6].value === "X" ) {
+
+    if(cells_input[0].value === "X" && cells_input[1].value === "X" && cells_input[2].value === "X"){
+        cells_input[0].style.backgroundColor = "green"
+        cells_input[1].style.backgroundColor = "green"
+        cells_input[2].style.backgroundColor = "green"
+    }
+    if(cells_input[3].value === "X" && cells_input[4].value === "X" && cells_input[5].value === "X"){
+        cells_input[3].style.backgroundColor = "green"
+        cells_input[4].style.backgroundColor = "green"
+        cells_input[5].style.backgroundColor = "green"
+    }
+    if(cells_input[6].value === "X" && cells_input[7].value === "X" && cells_input[8].value === "X"){
+        cells_input[6].style.backgroundColor = "green"
+        cells_input[7].style.backgroundColor = "green"
+        cells_input[8].style.backgroundColor = "green"
+    }
+    if(cells_input[3].value === "X" && cells_input[6].value === "X" && cells_input[0].value === "X"){
+        cells_input[6].style.backgroundColor = "green"
+        cells_input[3].style.backgroundColor = "green"
+        cells_input[0].style.backgroundColor = "green"
+    }
+    if(cells_input[1].value === "X" && cells_input[4].value === "X" && cells_input[7].value === "X"){
+        cells_input[1].style.backgroundColor = "green"
+        cells_input[4].style.backgroundColor = "green"
+        cells_input[7].style.backgroundColor = "green"
+    }
+    if(cells_input[2].value === "X" && cells_input[5].value === "X" && cells_input[8].value === "X"){
+        cells_input[2].style.backgroundColor = "green"
+        cells_input[5].style.backgroundColor = "green"
+        cells_input[8].style.backgroundColor = "green"
+    }
+    if(cells_input[0].value === "X" && cells_input[4].value === "X" && cells_input[8].value === "X"){
+        cells_input[0].style.backgroundColor = "green"
+        cells_input[4].style.backgroundColor = "green"
+        cells_input[8].style.backgroundColor = "green"
+    }
+    if(cells_input[2].value === "X" && cells_input[4].value === "X" && cells_input[6].value === "X"){
+        cells_input[2].style.backgroundColor = "green"
+        cells_input[4].style.backgroundColor = "green"
+        cells_input[6].style.backgroundColor = "green"
+    }
+
+    setTimeout(()=>{
+        for(let i = 0; i < 9; i++){
+            cells_input[i].style.backgroundColor = " rgb(25, 25, 66)"
+        }
+       
+    },2000)
+
+   
     setTimeout(()=>{
         num_of_play = 0
         ++computer_score
